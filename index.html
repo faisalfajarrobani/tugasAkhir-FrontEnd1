@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf Apps</title>
+    <link rel="icon" href="assets/image/logotitle.jpg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BookShelf Apps</h1>
+    </header>
+
+    <main>
+      <div class="parent-section">
+        <section class="bagian-input">
+          <h2>Masukkan Buku Baru :</h2>
+          <form id="inputBuku">
+            <div class="input">
+              <label for="inputJudulBuku">Judul</label>
+              <input id="inputJudulBuku" placeholder="Masukkan judul buku" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputPenulisBuku">Penulis</label>
+              <input id="inputPenulisBuku" placeholder="Masukkan penulis buku" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputTahunTerbit">Tahun Terbit</label>
+              <input id="inputTahunTerbit" placeholder="Masukkan tahun terbit buku" type="number" required />
+            </div>
+            <div>
+              <label for="inputIsComplete">Selesai dibaca</label>
+              <input id="inputIsComplete" type="checkbox" />
+            </div>
+            <button id="submitBukuToRak" type="submit">
+              <p>Masukkan Buku SUDAH/BELUM dibaca ke rak</p>
+            </button>
+          </form>
+        </section>
+
+        <aside>
+          <section class="header-kelola">
+            <h2>Kelola Buku SUDAH/BELUM Dibaca :</h2>
+          </section>
+
+          <section class="rak-buku">
+            <h2>Belum Selesai Dibaca</h2>
+            <div id="belumSelesaiDibaca" class="list-buku"></div>
+          </section>
+
+          <section class="rak-buku">
+            <h2>Selesai Dibaca</h2>
+            <div id="sudahSelesaiDibaca" class="list-buku"></div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer>Build with love &copy; 2022,<em> Faisal Fajar Robani.</em></footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

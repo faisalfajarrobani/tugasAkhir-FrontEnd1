@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  font-family: arial, sans-serif;
+  justify-content: center;
+  text-align: center;
+  padding: 13px;
+  font-size: 12px;
+  background-color: #2c3639;
+  color: white;
+}
+body,
+input {
+  font-family: arial, sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.parent-section {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bagian-input {
+  margin-right: 50px;
+  position: sticky;
+  top: 55px;
+  height: 500px;
+  background-color: white;
+}
+aside {
+  margin-left: 50px;
+}
+.bagian-input,
+.header-kelola {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 25px auto 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.3);
+}
+#inputBuku {
+  width: 435px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.input label {
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2c3639;
+}
+.header-kelola {
+  font-size: 13px;
+  border: 4px double #2c3639;
+}
+#inputJudulBuku,
+#inputPenulisBuku,
+#inputTahunTerbit {
+  font-size: 15px;
+  border-radius: 5px;
+  height: 35px;
+  padding: 10px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #2c3639;
+}
+#inputBuku button {
+  background-color: #2c3639;
+  padding: 10px;
+  margin: 6px auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  border: 1px solid #2c3639;
+  transition: 0.4s;
+  cursor: pointer;
+  width: 100%;
+  height: 15%;
+}
+#inputBuku button p {
+  color: white;
+  margin: auto;
+  font-size: 15px;
+}
+#inputBuku button p:hover {
+  color: rgb(230, 225, 225);
+}
+.rak-buku {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 50px auto 0 auto;
+  padding: 17px;
+  border-radius: 10px;
+  box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+.book-item {
+  color: #2c3639;
+  box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border: 1px ridge #2c3639;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.book-item h3 {
+  font-size: 25px;
+  color: white;
+  background-color: #2c3639;
+  padding: 10px;
+  border-radius: 10px;
+}
+.aksi {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.book-item p {
+  margin-top: 15px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.aksi .red {
+  background-color: #ff6b6b;
+  padding: 8px;
+  margin-right: 6px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 1px solid #ff6b6b;
+}
+.aksi .red:hover {
+  background-color: white;
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+}
+.aksi .green {
+  background-color: #6bcb77;
+  padding: 8px;
+  margin-right: 6px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  border: none;
+  color: white;
+  border: 1px solid #6bcb77;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.aksi .green:hover {
+  background-color: white;
+  color: #6bcb77;
+  border: 1px solid #6bcb77;
+}
+footer {
+  margin-top: 20px;
+  background-color: #2c3639;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+.list-buku {
+  align-items: center;
+}
+.rak-buku h2 {
+  margin-bottom: 15px;
+  margin: auto;
+}
+.loader-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.loader-div p {
+  position: absolute;
+  top: 93%;
+  right: 40%;
+}
+.loader {
+  position: absolute;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top-color: black;
+  animation: an1 0.8s ease infinite;
+  top: 85%;
+  right: 45%;
+}
+
+@keyframes an1 {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@media (max-width: 900px) {
+  header,
+  footer {
+    width: 100%;
+  }
+  .parent-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .bagian-input {
+    position: relative;
+    margin: auto;
+    top: 0;
+  }
+  .child-parent-section {
+    margin: auto;
+  }
+  main {
+    margin: auto;
+  }
+}
