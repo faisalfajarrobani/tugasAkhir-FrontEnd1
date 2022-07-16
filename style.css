@@ -56,6 +56,7 @@ aside {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
+  width: 100%;
 }
 .input label {
   margin-bottom: 6px;
@@ -64,6 +65,7 @@ aside {
   color: #2c3639;
 }
 .header-kelola {
+  width: 100%;
   font-size: 13px;
   border: 4px double #2c3639;
 }
@@ -71,6 +73,7 @@ aside {
 #inputPenulisBuku,
 #inputTahunTerbit {
   font-size: 15px;
+  width: 100%;
   border-radius: 5px;
   height: 35px;
   padding: 10px;
@@ -221,20 +224,42 @@ footer {
   footer {
     width: 100%;
   }
+  .book-item {
+    width: 100%;
+  }
+  #inputBuku {
+    width: 100%;
+  }
   .parent-section {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    margin: auto;
+    width: 100%;
   }
   .bagian-input {
     position: relative;
     margin: auto;
-    top: 0;
+    width: 100%;
+    margin-top: -40px;
+    margin-bottom: 50px;
   }
-  .child-parent-section {
+  aside {
     margin: auto;
+    position: relative;
+    width: 100%;
   }
   main {
     margin: auto;
+    justify-content: center;
+    width: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .rak-buku {
+    width: 100%;
   }
 }
