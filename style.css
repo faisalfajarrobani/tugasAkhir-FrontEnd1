@@ -230,6 +230,9 @@ footer {
   #inputBuku {
     width: 100%;
   }
+  .header-kelola h2 {
+    font-size: 16px;
+  }
   .parent-section {
     display: flex;
     flex-direction: column;
@@ -243,6 +246,7 @@ footer {
     width: 100%;
     margin-top: -40px;
     margin-bottom: 50px;
+    height: 80%;
   }
   aside {
     margin: auto;
@@ -253,6 +257,7 @@ footer {
     margin: auto;
     justify-content: center;
     width: 100%;
+    padding: 20px;
   }
   body {
     display: flex;
@@ -261,5 +266,18 @@ footer {
   }
   .rak-buku {
     width: 100%;
+    margin-top: 20px;
+  }
+  #inputBuku button p {
+    font-size: 12px;
+  }
+  #inputBuku button p:hover {
+    color: rgb(230, 225, 225);
+  }
+  .aksi .red {
+    margin: 5px 5px;
+  }
+  .aksi .green {
+    margin: 5px 5px;
   }
 }
